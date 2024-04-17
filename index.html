@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politecnico Change</title>
+    <link rel="stylesheet" href="Css/Styles.css">
+</head>
+<body>
+
+    <video src="Img/VideoPagina.mp4" autoplay="true" muted="true" loop="true" ></video>
+
+    <header>
+        <nav>
+            <a>POLITECNICOCHANGE</a>
+            <p>
+            <img src="Img/UnionEuropea.png">
+            <img src="Img/EstadosUnidos.png">
+            <img src="Img/Brasil.png">
+            <img src="Img/colombia.png">
+            </p>
+        </nav>
+    </header>
+
+    <div class="A">
+        <p style="color: rgb(160, 157, 157);">Convierte EUR a COP</p>
+        <h1>EUROS A PESOS<br>COLOMBIANOS</h1>
+    </div>
+
+
+    <div class="contenedor" style="align-items: center;">
+        <h1>Conversor de Moneda</h1>
+        <br>
+        <div>
+            <input type="number" id="Valor" min="0" step="0.01">
+        
+            
+            <select id="from">
+                <option value="EUR">EU - Euros</option>
+                <option value="USD">USD - Dólares</option>
+                <option value="BRL">BR - Reales Brasileños</option>
+            </select>
+        </div>
+        <br>
+        <div >
+            <label for="to"><b>Convertir a:</b></label>
+            <img src="Img/colombiaPeque.png">
+            <label id="to">COP - Pesos Colombianos</label>
+        </div>
+        <button onclick="convertCurrency()">Convertir</button>
+        <div id="result"></div>
+    </div>
+
+    <footer>
+        <p>@ Juxn Castañeda 2022. all right reserved...</p>
+    </footer>
+
+    <script src="Script/script.js"></script>
+    
+</body>
+</html>
